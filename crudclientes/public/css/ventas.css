@@ -1,0 +1,465 @@
+*
+{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Sans";
+    font-style: normal;
+    background: rgb(241, 249, 252);   
+}
+
+.MenuLogo{
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 215px;
+    height: 300px;
+}
+nav li{
+    padding: 15px;
+    font-size: 25px;
+    display: flex;
+}
+nav li a .imgmenu{
+    width: 20%;
+    height: 20%;
+}
+
+nav li a span{
+    color: #00C1FF;
+    
+}
+.selecc:hover{
+    width: 160px;
+    height: 35px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.Izquierda {
+    width: 15%;
+    height: 950px;
+    background: #000000;
+}
+
+.Logo { 
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+}
+.Logotitulo{
+    font-size: 25px;
+    color: #00C1FF;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.MenA { 
+    position: absolute;
+    width: 178px;
+    height: 151px;
+    left: 50px;
+    top: 280px;
+}
+.MenB{
+    position: absolute;
+    width: 178px;
+    height: 184px;
+    left: 50px;
+    top: 450px;
+}
+
+.login{
+    position: relative;
+    top: 500px;
+    left: 40px;
+
+    width: 170px;
+    height: 50px;
+    bottom: 30px;
+    background: white;
+    border-radius: 6px;
+}
+.logintext{
+    font-size: 13px;
+    position: absolute;
+    width: 45px;
+    height: 18px;
+    left: 60px;
+    top: 8px;
+}
+
+.loginfoto{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 10px;
+    top: 8px;
+    border-radius: 30px;
+}
+.loginflecha {
+    position: absolute;
+    left: 130px;
+    top: 15px;
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+
+.header {
+    font-size: 25px;
+    color: #00C1FF;
+    position: absolute;
+    top: 40px;
+    left: 350px;
+}
+
+.Buscar button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+}
+.Buscar {
+    --timing: 0.3s;
+    --width-of-input: 500px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: absolute;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+    top: 10px;
+    left: 500px;
+}
+.input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+}
+.Buscar:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+}
+.Buscar:focus-within {
+    border-radius: var(--after-border-radius);
+}
+
+input:focus {
+    outline: none;
+}
+.Buscar:focus-within:before {
+    transform: scale(1);
+}
+.reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+}
+input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+}
+.Buscar svg {
+    width: 17px;
+    margin-top: 3px;
+}
+
+
+
+.fondoformulario{
+    position: absolute;
+    top: 260px;
+    left: 350px;
+    background: #fff;
+    height: 420px;
+    width: 1000px;
+    border-radius: 15px;
+}
+.formulario .for1{
+    position: relative;
+    top: 30px;
+    left: 25px;
+}
+.formulario .for1 h2{
+    font-size: 15px;
+}
+.formulario .for1 input{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid rgb(145, 145, 145);
+} 
+
+.formulario .for2{
+    position: relative;
+    top: 80px;
+    left: 25px;
+}
+.formulario .for2 input{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid rgb(145, 145, 145);
+}
+.formulario .for2 h2{
+    font-size: 15px;
+} 
+
+.formulario .for3{
+    position: relative;
+    top: 130px;
+    left: 25px;
+}
+.formulario .for3 input{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid rgb(145, 145, 145);
+} 
+.formulario .for3 h2{
+    font-size: 15px;
+}
+
+.formulario .for4{
+    position: relative;
+    top: -140px;
+    left: 350px;
+}
+.formulario .for4 input{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid rgb(145, 145, 145);
+} 
+.formulario .for4 h2{
+    font-size: 15px;
+}
+
+.formulario .for5{
+    position: relative;
+    top: -90px;
+    left: 350px;
+}
+.formulario .for5 input{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid rgb(145, 145, 145);
+} 
+.formulario .for5 h2{
+    font-size: 15px;
+}
+
+.formulario .for6{
+    position: relative;
+    top: -40px;
+    left: 350px;
+}
+.formulario .for6 input{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid rgb(145, 145, 145);
+} 
+.formulario .for6 h2{
+    font-size: 15px;
+}
+.formulario .for10{
+    position: relative;
+    top: -300px;
+    left: 650px;
+    height: 200px;
+    width: 300px;
+    background: #ffffff;
+    border: 4px dashed #615e5e;
+    border-radius: 15px;
+    text-align: center;
+}
+.formulario .for10 h2{
+    font-size: 20px;
+    position: relative;
+    top: 70px;
+}
+
+.formulario .for10 img{
+    position: relative;
+    top: 80px;
+}
+.formulario .for10:hover{
+    background: #00C1FF;
+}
+
+.Cancelar{
+    position: relative;
+    top: -200px;
+    left: 750px;
+    height: 40px;
+    width: 90px;
+    background: #fff;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}
+.Cancelar:hover{
+    color: #00C1FF;
+}
+.Guardar{
+    position: relative;
+    top: -200px;
+    left: 750px;
+    height: 40px;
+    width: 90px;
+    background: #00C1FF;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+}
+.Guardar:hover{
+    color: #000000;
+}
+
+.fondotabla1{
+    position: absolute;
+    top: 700px;
+    left: 350px;
+    height: 220px;
+    width: 1000px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+}
+.fondotabla1 table{
+    width: 100%;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    left: 5px;
+}
+.fondotabla1 table td{
+    padding: 10px;
+    border-bottom: 1px solid rgb(240, 238, 238);
+}
+
+.fondotabla1 table .cuadro{
+    width: 30px;
+    height: 30px;
+    background: #BBF3E0;
+    border-radius: 10px;
+}
+.fondotabla1 table .cuadro2{
+    width: 30px;
+    height: 30px;
+    background: #FFEAC5;
+    border-radius: 10px;
+}
+.fondotabla1 table .cuadro3{
+    width: 30px;
+    height: 30px;
+    background: #BBF3E0;
+    border-radius: 10px;
+}
+.fondotabla1 table .cuadro4{
+    width: 30px;
+    height: 30px;
+    background: #FFDBDB;
+    border-radius: 10px;
+}
+
+.fondotabla1 table .proceso{
+    width: 96px;
+    height: 31px;
+    background: #BBF3E0;
+    border-radius: 8px;
+}
+
+.fondotabla1 table .proceso2{
+    width: 96px;
+    height: 31px;
+    background: #FFF3DB;
+    border-radius: 8px;
+}
+
+.fondotabla1 table .proceso3{
+    width: 96px;
+    height: 31px;
+    background: #BBF3E0;
+    border-radius: 8px;
+}
+
+.fondotabla1 table .proceso4{
+    width: 96px;
+    height: 31px;
+    background: #FFDBDB;
+    border-radius: 8px;
+}
+
+.fondotabla2{
+    position: absolute;
+    top: 140px;
+    left: 350px;
+    height: 100px;
+    width: 1000px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.fondotabla2 table{
+    width: 100%;
+    font-size: 17px;
+}
+.fondotabla2 thead{
+    color: #00C1FF;
+}
+
+.fondotabla2 table tr:hover{
+    color: black;
+    height: 20px;
+    width: 1000px;
+    background-color: #00C1FF;
+}
+
+.gra1{
+    position: absolute;
+    top: 150px;
+    left: 1450px;
+    width: 400px;
+    height: 350px;
+}
+
+.gra2{
+    position: absolute;
+    top: 550px;
+    left: 1450px;
+    width: 400px;
+    height: 350px;
+}
