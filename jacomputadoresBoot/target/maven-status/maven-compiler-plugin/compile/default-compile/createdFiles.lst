@@ -1,5 +1,0 @@
-com\jacomputadores\Entity\Garantia.class
-com\jacomputadores\Repository\GarantiaRepository.class
-com\jacomputadores\Controller\GarantiaController.class
-com\jacomputadores\Service\GarantiaService.class
-com\jacomputadores\Service\GarantiaServiceIMPL\GSIMPL.class
